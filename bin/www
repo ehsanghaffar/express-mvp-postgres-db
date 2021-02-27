@@ -7,7 +7,6 @@
 var app = require('../app');
 var debug = require('debug')('express-app-with-express-generator:server');
 var http = require('http');
-
 let models = require('../models');
 /**
  * Get port from environment and store in Express.
@@ -25,7 +24,7 @@ var server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
-return models.Sequelize.sync().then(result => {
+return models.sequelize.sync().then(result => {
 
   server.listen(port);
   server.on('error', onError);
