@@ -1,6 +1,9 @@
 {
-  "name": "express-app-with-express-generator",
+  "name": "express-mvp-app",
   "version": "0.0.1",
+  "author": "Ehsanghaffarii",
+  "git": "https://github.com/ehsanghaffarii/express-mvp-postgres-db",
+  "description": "Node app with express, postgres and sequelize",
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www;"
