@@ -9,7 +9,10 @@ block content
   if leads
     h1 leads 
     for lead in leads
-      p 
+      p(id=lead.id)
         span #{lead.email}
         |
         a(href="/lead/" + lead.id) Details
+        |
+        button(onclick=`deleteLead('${lead.id}')`, id="deleteBtn") Delete
+  script(src='/javascripts/leads.js')

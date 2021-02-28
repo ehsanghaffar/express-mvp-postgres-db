@@ -18,5 +18,7 @@ router.post('/lead/:lead_id/edit', landing.edit_lead);
 
 // destroy lead routes
 router.post('/lead/:lead_id/delete', landing.delete_lead);
+// ajax delete
+router.post('/lead/:lead_id/delete-json', landing.delete_lead_json);
 
 module.exports = router;
