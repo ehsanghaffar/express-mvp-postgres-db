@@ -25,3 +25,5 @@ npm install
 
 
  ### License
+
+  This repo is licensed under the MIT License.
